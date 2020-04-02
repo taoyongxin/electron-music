@@ -5,6 +5,8 @@
       <div class="left-side">
         <span class="title">
           Welcome to your new project!
+          <input type="text">
+          <el-input v-model="input" placeholder="请输入内容"></el-input>
         </span>
         <system-information></system-information>
       </div>
