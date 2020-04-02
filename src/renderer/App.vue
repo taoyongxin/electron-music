@@ -11,5 +11,6 @@
 </script>
 
 <style>
-  /* CSS */
+@import url("assets/css/style.css");
+@import url("assets/css/basic.css");
 </style>
