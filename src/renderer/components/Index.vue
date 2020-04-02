@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div class="container">
     <h1>主页</h1>
-    <button @click="text()">跳转</button>
   </div>
 </template>
 
@@ -10,7 +9,6 @@ export default {
  name: 'Index',
   data() {
     return {
-
     }
   },
   components: {},
@@ -19,6 +17,9 @@ export default {
   methods: {
       text(){
           this.$router.push("/login")
+      },
+      main(){
+        this.$router.push("/tab")
       }
   },
   computed: {}
@@ -26,5 +27,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.container{
+  margin: 0 auto;
+  margin-left: -7%;
+  width: 770px;
+  height: 400px;
+  background-color: red;
+}
 </style>
