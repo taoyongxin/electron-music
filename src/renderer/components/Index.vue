@@ -1,6 +1,18 @@
 <template>
   <div class="container">
-    <h1>音乐馆</h1>
+    <div class="top0">
+     <input class="input" placeholder="请输入内容"/>
+     <img class="picture1 jl" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/音乐 (3).png">
+      <div class=" top-right">
+        <img class="picture1" style="border-radius:50%" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/8ad59cc9e1fe18e61db6d3ccbc615d5.jpg">
+        <p class="jl">测试名字</p>
+        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/钻石.png">
+        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/下  拉 (1).png">
+        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/皮肤.png">
+        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/查找 表单 列表.png">
+    </div>
+    </div><br>
+    <h1 style="color:#000000;">音乐馆</h1>
     <br />
     <div class="top">
       <p class="wz">精选</p>
@@ -60,9 +72,6 @@
         <p>失恋解药</p>
       </div>
     </div><br>
-    <div class="gequ">
-
-    </div>
   </div>
 </template>
 <script>
@@ -137,6 +146,37 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.top0 {
+  position: absolut;
+  margin-top: -40px;
+  display: flex;
+  padding: 3px 5px 0 10px;
+  margin-left: -1px;
+  width: 800px;
+  height: 37px;
+  background-color:#fff;
+}
+.top-right{
+  display: flex;
+  margin-left: 360px;
+  width: 255px;
+  height: 30px;
+  background-color: #ffffff;
+}
+.input {
+  background-color: #e0e0e0;
+  border: none;
+  width: 120px;
+  height: 27px;
+  border-radius: 15px;
+}
+.picture1{
+  width: 30px;
+  height: 30px;
+}
+.jl{
+  padding: 2px 5px 1px 5px;
+}
 .container {
   position: absolute;
   top: 50px;

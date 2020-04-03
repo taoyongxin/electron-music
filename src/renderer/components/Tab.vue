@@ -8,7 +8,7 @@
               class="picture"
               src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/个人信息.png"
             />
-            <router-link to="/personal">个人信息</router-link>
+            <router-link to="/personal" style="color:#393d49;">个人信息</router-link>
           </el-menu-item>
           <el-submenu index="1">
             <template slot="title">
@@ -16,12 +16,12 @@
                 class="picture"
                 src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/音乐.png"
               />
-              <router-link to="/index">音乐馆</router-link>
+              <router-link to="/index" style="color:#393d49;">音乐馆</router-link>
             </template>
           </el-submenu>
           <el-menu-item index="2">
             <img class="picture" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/视频.png" />
-            <router-link to="/main">视频</router-link>
+            <router-link to="/main" style="color:#393d49;">视频</router-link>
           </el-menu-item>
           <el-menu-item index="3">
             <img class="picture" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/电台.png" />
@@ -65,18 +65,6 @@
         </el-menu>
       </el-col>
     </el-row>
-    <div class="top">
-     <input class="input" placeholder="请输入内容"/>
-     <img class="picture1 jl" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/音乐 (3).png">
-      <div class=" top-right">
-        <img class="picture1" style="border-radius:50%" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/8ad59cc9e1fe18e61db6d3ccbc615d5.jpg">
-        <p class="jl">测试名字</p>
-        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/钻石.png">
-        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/下  拉 (1).png">
-        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/皮肤.png">
-        <img class="jl picture1" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/查找 表单 列表.png">
-    </div>
-    </div>
     <div>
       <router-view />
     </div>
@@ -88,45 +76,8 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.top {
-  position: absolut;
-  margin-top: 2px;
-  display: flex;
-  padding: 3px 5px 0 10px;
-  margin-left: -130px;
-  width: 800px;
-  height: 37px;
-  background-color:#fff;
-
-}
 #content {
   background: #ffffff;
   width: 100%;
-  
-
-}
- .input {
-  background-color: #e0e0e0;
-  border: none;
-  width: 120px;
-  height: 27px;
-  border-radius: 15px;
-}
-.picture1{
-  width: 30px;
-  height: 30px;
-}
-.jl{
-  padding: 2px 5px 1px 5px;
-}
-jl2{
-  padding: 5px;
-}
-.top-right{
-  display: flex;
-  margin-left: 360px;
-  width: 255px;
-  height: 30px;
-  background-color: #ffffff;
 }
 </style>
