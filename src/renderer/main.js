@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import axios from 'axios'
+import global_ from '@/util/Global'
 
 import App from './App'
 import router from './router'
@@ -19,6 +20,10 @@ Vue.use(Vuex)
 Vue.use(ElementUI);
 
 Vue.use(VueMaterial)
+
+Vue.prototype.$axios= axios
+
+Vue.prototype.GLOBAL = global_
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
