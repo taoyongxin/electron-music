@@ -4,6 +4,7 @@
      <input class="input" placeholder="请输入内容"/>
      <img class="picture1 jl" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/音乐 (3).png">
       <div class=" top-right">
+
         <img class="picture1" style="border-radius:50%" src="https://niit-student.oss-cn-beijing.aliyuncs.com/markdown/music.png">
         <p class="jl">{{user.userName}}</p>
         <button @click="login()" v-if="user.id==null">登录</button>
