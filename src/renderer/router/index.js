@@ -5,7 +5,7 @@ import Login from '../components/Login.vue'
 import Main from '../components/Main.vue'
 import Tab from '../components/Tab.vue'
 import Personal from '../components/Personal.vue'
-
+import Registered from '../components/Registered.vue'
 
 
 Vue.use(Router)
@@ -42,12 +42,18 @@ export default new Router({
           name:'personal',
           component:Personal
         }
+
     ]
     },
     {
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path:'/registered',
+      name:'registered',
+      component:Registered
     }
   ]
 })

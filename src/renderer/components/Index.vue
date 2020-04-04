@@ -1,6 +1,16 @@
 <template>
   <div class="container">
-    <h1>音乐馆</h1>
+    <div class="top0">
+     <input class="input" placeholder="请输入内容"/>
+     <img class="picture1 jl" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/音乐 (3).png">
+      <div class=" top-right">
+        <img class="picture1" style="border-radius:50%" src="https://niit-student.oss-cn-beijing.aliyuncs.com/markdown/music.png">
+        <p class="jl">{{user.userName}}</p>
+        <button @click="login()" v-if="user.id==null">登录</button>
+        <button @click="clear()" v-if="user.id!=null">注销</button>
+    </div>
+    </div><br>
+    <h1 style="color:#000000;">音乐馆</h1>
     <br />
     <div class="top">
       <p class="wz">精选</p>
@@ -60,9 +70,6 @@
         <p>失恋解药</p>
       </div>
     </div><br>
-    <div class="gequ">
-
-    </div>
   </div>
 </template>
 <script>
@@ -70,6 +77,7 @@ export default {
   name: "Index",
   data() {
     return {
+      user: JSON.parse(localStorage.getItem('user')),
         logisActive: true,
 				albumisActive: false,
 				logistrue: true,
@@ -107,6 +115,14 @@ export default {
   },
   mounted() {},
   methods: {
+    clear(){
+      this.user.id=null;
+      this.user.userName=null;
+      console.log(this.user)
+    },
+    login(){
+      this.$router.push("/login")
+    },
     text() {
       this.$router.push("/login");
     },
@@ -137,6 +153,37 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.top0 {
+  position: absolut;
+  margin-top: -40px;
+  display: flex;
+  padding: 3px 5px 0 10px;
+  margin-left: -1px;
+  width: 800px;
+  height: 37px;
+  background-color:#fff;
+}
+.top-right{
+  display: flex;
+  margin-left: 360px;
+  width: 255px;
+  height: 30px;
+  background-color: #ffffff;
+}
+.input {
+  background-color: #e0e0e0;
+  border: none;
+  width: 120px;
+  height: 27px;
+  border-radius: 15px;
+}
+.picture1{
+  width: 30px;
+  height: 30px;
+}
+.jl{
+  padding: 2px 5px 1px 5px;
+}
 .container {
   position: absolute;
   top: 50px;
@@ -174,7 +221,7 @@ export default {
 .Carousel {
   margin-left: 2%;
   width: 96%;
-  height: 200px;
+  height: 180px;
   background-color: #ffffff;
 }
 .picture {
