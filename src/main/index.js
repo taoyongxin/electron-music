@@ -27,7 +27,8 @@ function createWindow() {
   })
 
   mainWindow.loadURL(winURL)
-
+  // 取消菜单栏
+  mainWindow.setMenu(null)
   mainWindow.on('closed', () => {
     mainWindow = null
   })
@@ -46,6 +47,8 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+
 
 /**
  * Auto Updater

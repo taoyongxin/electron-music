@@ -16,7 +16,7 @@
                 class="picture"
                 src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/音乐.png"
               />
-              <router-link to="/index" style="color:#393d49;">音乐馆</router-link>
+              <router-link to="/index" style="color:#393d49;text-docoration：none；">音乐馆</router-link>
             </template>
           </el-submenu>
           <el-menu-item index="2">

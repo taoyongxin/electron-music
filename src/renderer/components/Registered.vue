@@ -13,7 +13,7 @@
       <el-input placeholder="请输入验证码" v-model="inputMessage" class="inputmsg-class cc-shadow"></el-input>
       <el-button @click="getCode()">{{msg}}</el-button>
         </div>
-      <el-checkbox v-model="checked" style="margin-left:-40px">同意用户协议</el-checkbox>
+      <router-link to="/login" >返回登陆</router-link>
     </div>
     <div>
       <el-button class="btn cc-shadow btn-class" @click="registered()">注册</el-button>

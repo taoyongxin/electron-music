@@ -5,7 +5,8 @@
      <img class="picture1 jl" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/音乐 (3).png">
       <div class=" top-right">
 
-        <img class="picture1" style="border-radius:50%" src="https://niit-student.oss-cn-beijing.aliyuncs.com/markdown/music.png">
+        <img class="picture1" style="border-radius:50%" src="https://niit-student.oss-cn-beijing.aliyuncs.com/markdown/JESB[_4{9D]F9{`O5VFXB@N.png
+">
         <p class="jl">{{user.userName}}</p>
         <button @click="login()" v-if="user.id==null">登录</button>
         <button @click="clear()" v-if="user.id!=null">注销</button>
@@ -49,7 +50,7 @@
     <h1>官方歌单</h1>
     <br />
     <div class="guanf">
-      <div class="music">
+      <div class="music" @click="tiao()">
         <img
           class="img"
           src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/20200403160756.png"
@@ -116,6 +117,9 @@ export default {
   },
   mounted() {},
   methods: {
+    tiao(){
+      this.$router.push("/main")
+    },
     clear(){
       this.user.id=null;
       this.user.userName=null;
